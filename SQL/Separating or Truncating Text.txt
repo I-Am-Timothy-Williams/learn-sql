@@ -1,0 +1,16 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Create a Mailing List of US Customers
+*/
+SELECT
+	FirstName,
+	LastName,
+	Address,
+	FirstName || ' ' || LastName || ' ' || Address || ', ' || City || ' ' || State || ' ' || PostalCode AS [Mailing Address]
+	LENGTH(PostalCode),
+	substr(PostalCode, 1, 5) -- Start at Digit 1 and Truncate after Digit 5
+FROM
+	Customer
+WHERE
+	Country = 'USA'

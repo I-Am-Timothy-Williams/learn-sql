@@ -1,0 +1,21 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Get all invoices that are greater than 1.98 from any cities whose name starts with P or starts with D?
+
+PEMDAS - Order of Operations
+BEMDAS
+*/
+-- %  means I dont care what comes next
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM 
+	Invoice
+
+WHERE
+	total > 1.98 AND (BillingCity LIKE ('P%') OR BillingCity LIKE ('D%'))
+ORDER BY
+	InvoiceDate

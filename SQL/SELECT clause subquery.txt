@@ -1,0 +1,25 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Subqueries | Gather data about all invoices that are less than the average
+*/
+
+-- This is Query for average 
+SELECT
+	round(AVG(TOTAL),2) AS [Average Total]
+FROM
+	Invoice
+-- This is for data less than average
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM
+	Invoice
+WHERE
+	total<
+	(select avg(total) from Invoice)
+ORDER BY
+	total DESC
+	

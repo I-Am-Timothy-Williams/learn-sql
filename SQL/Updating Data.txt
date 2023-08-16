@@ -1,0 +1,14 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: DML | Inserting Data
+
+
+*/
+
+UPDATE 
+	Artist
+SET Name = 'Damian Marley'
+WHERE
+	ArtistId = 276 -- Artist 276 was the bob marley we just added
+

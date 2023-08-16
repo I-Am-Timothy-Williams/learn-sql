@@ -1,0 +1,31 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: How many invoices were billed to Brussels? & Brussels, Orland or Paris
+*/
+
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM 
+	Invoice
+
+WHERE
+	BillingCity = 'Brussels'
+ORDER BY
+	InvoiceDate
+
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity,
+	total
+FROM 
+	Invoice
+
+WHERE
+	BillingCity IN ('Brussels','Orlando','Paris')
+ORDER BY
+	InvoiceDate

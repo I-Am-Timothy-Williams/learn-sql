@@ -1,0 +1,14 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Views
+
+Views are virtual tables used to store complex queries
+*/
+CREATE VIEW V_AvgTotal AS
+Select
+	round(avg(total),2) AS [Average Total]
+From
+	Invoice
+
+

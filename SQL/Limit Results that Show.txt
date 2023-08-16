@@ -1,0 +1,16 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: This query displays all customers first, last names and email addresses and sorting order of first and last names
+*/
+
+SELECT
+	FirstName AS [Customer First Name],
+	LastName AS 'Customer Last Name',
+	Email AS EMAIL 
+FROM 
+	Customer
+ORDER BY
+	FirstName ASC,
+	LastName DESC -- Descending is DESC
+LIMIT 10 --Only shows the first 10 results out of the dataset

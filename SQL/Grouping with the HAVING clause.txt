@@ -1,0 +1,16 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Grouping in SQL | What are the average invoice totals greater than $5.00?
+*/
+SELECT
+	BillingCity,
+	round(avg(total), 2)
+FROM
+	Invoice
+GROUP BY -- Groups average by each city and doesnt just give one total average
+	BillingCity
+HAVING
+	avg(total) > 5
+Order BY
+	BillingCity

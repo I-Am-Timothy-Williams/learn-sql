@@ -1,0 +1,20 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Grouping in SQL | What are the average invoice totals greater than $5.00 only for cities starting with B?
+WHERE filters non aggregate data
+HAVING filters aggregate data
+*/
+SELECT
+	BillingCity,
+	round(avg(total), 2)
+FROM
+	Invoice
+WHERE
+	BillingCity LIKE 'B%'
+GROUP BY -- Groups average by each city and doesnt just give one total average
+	BillingCity
+HAVING
+	avg(total) > 5
+Order BY
+	BillingCity

@@ -1,0 +1,13 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Nesting Functions
+*/
+SELECT
+	SUM(Total) AS [Total Sales],
+	round( AVG(Total), 2) AS [Average Sales], -- round average to 2 decimals
+	MAX(Total) AS [Maximum Sale],
+	MIN(Total) AS [Minimum Sale],
+	COUNT (*) AS [Sales Count]
+FROM
+	Invoice

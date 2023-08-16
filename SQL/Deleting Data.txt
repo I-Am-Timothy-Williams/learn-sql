@@ -1,0 +1,13 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: DML | Deleting Data
+
+
+*/
+
+DELETE FROM 
+	Artist
+WHERE
+	ArtistId = 276 -- Artist 276 was the damian marley we just modified
+

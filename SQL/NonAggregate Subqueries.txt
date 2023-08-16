@@ -1,0 +1,23 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Subqueries without Aggregate functions
+*/
+
+-- This is Query for average 
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity
+FROM
+	Invoice
+WHERE
+	InvoiceDate >
+
+{SELECT
+	InvoiceDate
+FROM
+	Invoice
+WHERE
+	InvoiceId = 251}
+-- This inner query gets the date of the invoice for the customer 251 and then uses that as an argument for the outer query WHERE clause

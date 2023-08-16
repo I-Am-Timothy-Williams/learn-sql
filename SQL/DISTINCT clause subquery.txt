@@ -1,0 +1,26 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Subqueries and DISTINCT | Which invoices are not selling?
+DISTINCT removes all duplicate values
+*/
+
+SELECT
+	TrackId,
+	Composer,
+	Name
+FROM
+	Track
+WHERE
+	TrackId
+NOT IN
+
+(SELECT
+	DISTINCT
+	TrackId
+FROM
+	InvoiceLine
+ORDER BY
+	TrackId)
+
+

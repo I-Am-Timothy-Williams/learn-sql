@@ -1,0 +1,24 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Joins. Different Joins can be used to include or exclde discrepencies
+
+INNER JOIN only includes matching data, any mismatches will be excluded
+LEFT OUTER JOIN includes all data from left table with any matching data from right table
+RIGHT OUTER JOIN includes all data from right table with any matching data from left table
+*/
+
+SELECT
+	c.LastName,
+	c.FirstName,
+	i.InvoiceId,
+	i.CustomerId,
+	i.InvoiceDate,
+	i.total
+FROM
+	Invoice AS i
+INNER JOIN
+	Customer AS c
+ON -- Links two tables
+	i.CustomerId = c.CustomerId
+order by c.CustomerId

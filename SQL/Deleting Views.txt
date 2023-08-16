@@ -1,0 +1,11 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Views and Joins
+
+Views are virtual tables used to store complex queries
+Joins allow you to merge two tables
+*/
+DROP VIEW
+	V_Tracks_InvoiceLine
+

@@ -1,0 +1,21 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Joins. Returns every column from customer and invoice
+
+*/
+
+SELECT
+	c.LastName,
+	c.FirstName,
+	i.InvoiceId,
+	i.CustomerId,
+	i.InvoiceDate,
+	i.total
+FROM
+	Invoice AS i
+INNER JOIN
+	Customer AS c
+ON -- Links two tables
+	i.CustomerId = c.CustomerId
+order by c.CustomerId

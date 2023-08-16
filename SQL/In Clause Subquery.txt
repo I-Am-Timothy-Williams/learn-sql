@@ -1,0 +1,20 @@
+/*
+Created By: Timothy Williams
+Create Date: mm/dd/yyyy
+Description: Subqueries without Aggregate functions
+*/
+SELECT
+	InvoiceDate,
+	BillingAddress,
+	BillingCity
+FROM
+	Invoice
+WHERE
+	InvoiceDate IN
+
+(SELECT
+	InvoiceDate
+FROM
+	Invoice
+WHERE
+	InvoiceId IN (251, 252. 254))
