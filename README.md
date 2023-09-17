@@ -1,6 +1,6 @@
-# HR-Dashboard-MySQL-PowerBI
+# Sqlite-DBBrowser-DataAnalysis
 
-![image]([https://user-images.githubusercontent.com/56026296/229609893-b7b1f261-5941-45af-8322-1ccb2535d36b.png](https://media.licdn.com/dms/image/D4E2DAQHDbWpwfvmWTA/profile-treasury-image-shrink_800_800/0/1692131801332?e=1695567600&v=beta&t=r0J4Gt_0Y63Ycjd9iZZTWHwJCnu9ibuDGRhjp4c2fhk))
+![image](https://i.imgur.com/aP2Mw08.jpg)
 
 ## Data Used
 
